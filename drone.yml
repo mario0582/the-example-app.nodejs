@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: node
+  commands:
+  - drone exec
+  - npm install
+  - npm test
